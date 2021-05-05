@@ -113,3 +113,14 @@ def naive_matrix_dot(x, y):
       column_y = y[:, j]
       z[i, j] = naive_vector_dot(row_x, column_y)
   return z
+
+x = np.array([[0, 1], [2, 3], [4, 5]])
+print(x.shape)
+x = x.reshape((6, 1))
+print(x.shape)
+x = x.reshape((2, 3))
+print(x.shape)
+
+x = np.zeros((300, 20))
+x = np.transpose(x)
+print(x.shape)
